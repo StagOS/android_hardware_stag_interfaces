@@ -3,16 +3,13 @@
 hidl_interface {
     name: "vendor.lineage.power@1.0",
     root: "vendor.lineage",
+    system_ext_specific: true,
     srcs: [
         "types.hal",
         "ILineagePower.hal",
     ],
     interfaces: [
         "android.hidl.base@1.0",
-    ],
-    types: [
-        "LineageFeature",
-        "LineagePowerHint",
     ],
     gen_java: true,
 }
